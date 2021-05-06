@@ -7,7 +7,7 @@ class Band:
     def __init__(self,name,members):
         self.name = name
         self.members = members
-        Band.bands.append({'name':name,'members':members})
+        Band.bands.append(self)
     
     def play_solos(self):
         play_solos_arr=[]
